@@ -99,9 +99,7 @@ export async function fetchSlackTranscript(
 			role: message.user === botUserId || message.bot_id ? "assistant" : "user",
 			text: message.text ?? "",
 			files: message.files?.length
-				? extractSlackFiles(
-						message.files as Array<Record<string, unknown>>,
-					)
+				? extractSlackFiles(message.files as Array<Record<string, unknown>>)
 				: undefined,
 		}));
 }

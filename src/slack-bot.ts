@@ -80,10 +80,7 @@ function getDmContext(message: MessageEvent): ConversationContext | null {
 		return null;
 	}
 
-	if (
-		message.subtype !== undefined &&
-		message.subtype !== "file_share"
-	) {
+	if (message.subtype !== undefined && message.subtype !== "file_share") {
 		return null;
 	}
 
@@ -252,9 +249,7 @@ async function buildClaudeInput(
 		token,
 	);
 
-	return attachmentFiles.length
-		? { ...base, inputDir, attachmentFiles }
-		: base;
+	return attachmentFiles.length ? { ...base, inputDir, attachmentFiles } : base;
 }
 
 async function sendOutputFiles(
