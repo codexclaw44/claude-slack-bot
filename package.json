@@ -1,0 +1,26 @@
+{
+	"name": "slack-codex-bot",
+	"module": "src/index.ts",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"dev": "bun --watch run src/index.ts",
+		"start": "bun run src/index.ts",
+		"format": "biome format --write .",
+		"lint": "biome lint .",
+		"check": "biome check .",
+		"typecheck": "tsc --noEmit",
+		"scan:secrets": "mise exec -- gitleaks dir .",
+		"scan:secrets:git": "mise exec -- gitleaks git .",
+		"scan:secrets:staged": "mise exec -- gitleaks git . --staged"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.4.16",
+		"@types/bun": "latest",
+		"typescript": "^6.0.3"
+	},
+	"dependencies": {
+		"@anthropic-ai/claude-agent-sdk": "latest",
+		"@slack/bolt": "^4.7.3"
+	}
+}
