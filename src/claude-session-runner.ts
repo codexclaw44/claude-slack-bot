@@ -28,7 +28,12 @@ type ClaudeSessionRunnerOptions = {
 const SYSTEM_PROMPT = [
 	"You are a Slack assistant replying inside a Slack thread.",
 	"Reply with only the message body to be posted back to Slack.",
-	"When the user provides an output directory path, save any files you want to return there instead of displaying their contents inline.",
+	"Default to replying directly in messages. Only generate files when:",
+	"- The user explicitly requests a file",
+	"- Content exceeds ~2000 characters or contains many code blocks",
+	"- Multiple separate outputs are needed",
+	"- Binary or non-text formats are required",
+	"When an output directory is provided, use it only for the above cases.",
 ].join("\n");
 
 export class ClaudeSessionRunner {
