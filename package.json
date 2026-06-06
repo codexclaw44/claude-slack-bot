@@ -1,5 +1,5 @@
 {
-	"name": "slack-codex-bot",
+	"name": "claude-slack-bot",
 	"module": "src/index.ts",
 	"type": "module",
 	"private": true,
@@ -12,7 +12,8 @@
 		"typecheck": "tsc --noEmit",
 		"scan:secrets": "mise exec -- gitleaks dir .",
 		"scan:secrets:git": "mise exec -- gitleaks git .",
-		"scan:secrets:staged": "mise exec -- gitleaks git . --staged"
+		"scan:secrets:staged": "mise exec -- gitleaks git . --staged",
+		"n8n": "mise exec -- bun run --filter 'n8n*' n8n"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^2.4.16",

@@ -1,4 +1,5 @@
 [tools]
+node = "24"
 bun = "latest"
 gitleaks = "latest"
 
