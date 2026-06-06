@@ -1,0 +1,948 @@
+{
+	"metadata": {
+		"source": "GitHub GH-100 Practice Questions",
+		"total_questions": 25,
+		"last_updated": "2026-06-06",
+		"description": "実際のGH-100試験に基づいた認定問題データベース"
+	},
+	"questions": [
+		{
+			"id": 1,
+			"category": "API & Packages",
+			"difficulty": "basic",
+			"question": "When pulling an image to your local environment, which credentials are needed?",
+			"options": [
+				{
+					"letter": "A",
+					"text": "Your GitHub username and a Personal Access Token.",
+					"is_correct": true
+				},
+				{
+					"letter": "B",
+					"text": "The name of the organization and an API Key.",
+					"is_correct": false
+				},
+				{
+					"letter": "C",
+					"text": "The name of the package and a package key.",
+					"is_correct": false
+				},
+				{
+					"letter": "D",
+					"text": "Your GitHub username and a password.",
+					"is_correct": false
+				}
+			],
+			"explanation": "A GitHub username and a Personal Access Token are required to pull an image from GitHub Packages.",
+			"related_topics": [
+				"Authentication",
+				"GitHub Packages",
+				"Personal Access Token"
+			]
+		},
+		{
+			"id": 2,
+			"category": "Authentication",
+			"difficulty": "basic",
+			"question": "How can you authenticate to GitHub Packages from your local development environment?",
+			"options": [
+				{
+					"letter": "A",
+					"text": "With an API Key.",
+					"is_correct": false
+				},
+				{
+					"letter": "B",
+					"text": "With my GitHub Credentials (username and password).",
+					"is_correct": false
+				},
+				{
+					"letter": "C",
+					"text": "With a Personal Access Token.",
+					"is_correct": true
+				},
+				{
+					"letter": "D",
+					"text": "With a GitHub App.",
+					"is_correct": false
+				}
+			],
+			"explanation": "A Personal Access Token is required for authentication to GitHub Packages from local development environments.",
+			"related_topics": [
+				"Personal Access Token",
+				"Authentication",
+				"GitHub Packages"
+			]
+		},
+		{
+			"id": 3,
+			"category": "GitHub Packages",
+			"difficulty": "intermediate",
+			"question": "In which scenarios should you NOT use GitHub Packages?",
+			"options": [
+				{
+					"letter": "A",
+					"text": "When I want to share code between methods of my application.",
+					"is_correct": true
+				},
+				{
+					"letter": "B",
+					"text": "When I want to share container images among developers of your team.",
+					"is_correct": false
+				},
+				{
+					"letter": "C",
+					"text": "When I want to publish a small code library as an open-source project.",
+					"is_correct": false
+				},
+				{
+					"letter": "D",
+					"text": "When I want to manage version control for my codebase.",
+					"is_correct": false
+				}
+			],
+			"explanation": "GitHub Packages is not intended for sharing code between methods of an application. It is designed for package management, not internal code sharing.",
+			"related_topics": [
+				"GitHub Packages",
+				"Package Management",
+				"Best Practices"
+			]
+		},
+		{
+			"id": 4,
+			"category": "Support",
+			"difficulty": "basic",
+			"question": "GitHub support is limited to which of the following issues?",
+			"options": [
+				{
+					"letter": "A",
+					"text": "Account, Security, and Abuse issues.",
+					"is_correct": true
+				},
+				{
+					"letter": "B",
+					"text": "Security, server, and 2FA issues.",
+					"is_correct": false
+				},
+				{
+					"letter": "C",
+					"text": "Account, server, and security issues.",
+					"is_correct": false
+				},
+				{
+					"letter": "D",
+					"text": "Account, 2FA, and security issues.",
+					"is_correct": false
+				}
+			],
+			"explanation": "GitHub support focuses on account, security, and abuse-related issues.",
+			"related_topics": ["GitHub Support", "Support Scope"]
+		},
+		{
+			"id": 5,
+			"category": "Support",
+			"difficulty": "basic",
+			"question": "Which GitHub priority should you use to report critical system failures?",
+			"options": [
+				{
+					"letter": "A",
+					"text": "Urgent",
+					"is_correct": true
+				},
+				{
+					"letter": "B",
+					"text": "High",
+					"is_correct": false
+				},
+				{
+					"letter": "C",
+					"text": "Normal",
+					"is_correct": false
+				},
+				{
+					"letter": "D",
+					"text": "Low",
+					"is_correct": false
+				}
+			],
+			"explanation": "'Urgent' is the priority level for critical system failures.",
+			"related_topics": ["GitHub Support", "Priority Levels"]
+		},
+		{
+			"id": 6,
+			"category": "GitHub Features",
+			"difficulty": "basic",
+			"question": "What's a function you can execute on GitHub Mobile?",
+			"options": [
+				{
+					"letter": "A",
+					"text": "Check out branches with pull requests and view CI statuses.",
+					"is_correct": false
+				},
+				{
+					"letter": "B",
+					"text": "Compare changed images.",
+					"is_correct": false
+				},
+				{
+					"letter": "C",
+					"text": "Add and clone repositories.",
+					"is_correct": false
+				},
+				{
+					"letter": "D",
+					"text": "Manage, triage, and clear notifications from github.com.",
+					"is_correct": true
+				}
+			],
+			"explanation": "GitHub Mobile allows you to manage notifications, triage, and clear notifications effectively.",
+			"related_topics": ["GitHub Mobile", "Notifications"]
+		},
+		{
+			"id": 7,
+			"category": "Collaboration",
+			"difficulty": "intermediate",
+			"question": "What is the best way to report a bug to a GitHub project?",
+			"options": [
+				{
+					"letter": "A",
+					"text": "Send an email to a project owner.",
+					"is_correct": false
+				},
+				{
+					"letter": "B",
+					"text": "I don't bother reporting software bugs because there's no transparency, and they never get fixed anyway.",
+					"is_correct": false
+				},
+				{
+					"letter": "C",
+					"text": "Search for the bug in the project's existing issues, and create a new one if it hasn't been reported yet.",
+					"is_correct": true
+				},
+				{
+					"letter": "D",
+					"text": "Create a detailed issue report with steps to reproduce the bug.",
+					"is_correct": false
+				}
+			],
+			"explanation": "Searching for existing issues and creating a new one if necessary is the best way to report a bug to avoid duplicates.",
+			"related_topics": ["Bug Reporting", "Collaboration", "Best Practices"]
+		},
+		{
+			"id": 8,
+			"category": "Workflow",
+			"difficulty": "basic",
+			"question": "Suppose you created a bug fix on a new branch and want it to become part of the next production build generated from the main branch. What should you do next?",
+			"options": [
+				{
+					"letter": "A",
+					"text": "Copy your branch changes and commit them directly to the main branch.",
+					"is_correct": false
+				},
+				{
+					"letter": "B",
+					"text": "Create a pull request to merge your new branch into the main branch.",
+					"is_correct": true
+				},
+				{
+					"letter": "C",
+					"text": "On second thought, maybe I won't share this fix. I'll just put it in my own private version of the source code.",
+					"is_correct": false
+				},
+				{
+					"letter": "D",
+					"text": "Create a new branch from the main branch and copy your changes to the new branch.",
+					"is_correct": false
+				}
+			],
+			"explanation": "Pull request is used to start code review and transfer changes from new branches into the main branch.",
+			"related_topics": ["Pull Requests", "Workflow", "Code Review"]
+		},
+		{
+			"id": 9,
+			"category": "Contribution",
+			"difficulty": "intermediate",
+			"question": "Suppose you'd like to work with a project on GitHub, but you don't have write access to the project. What can you do to contribute?",
+			"options": [
+				{
+					"letter": "A",
+					"text": "Fork the project's repository to your GitHub account, clone the forked repository to your local machine, push changes to your repository, and submit a pull request to the target (upstream) repository.",
+					"is_correct": true
+				},
+				{
+					"letter": "B",
+					"text": "Clone the project to your local machine and push updates directly to the project repository.",
+					"is_correct": false
+				},
+				{
+					"letter": "C",
+					"text": "Use git commands to make a copy of the project so that you can work locally. Submit an issue to get your changes into the target repository.",
+					"is_correct": false
+				},
+				{
+					"letter": "D",
+					"text": "Use git commands to make a copy of the project so that you can work locally. Submit a pull request to get your changes into the target repository.",
+					"is_correct": false
+				}
+			],
+			"explanation": "Forking the repository and submitting a pull request is the standard way to contribute without write access.",
+			"related_topics": ["Forking", "Pull Requests", "Contribution Workflow"]
+		},
+		{
+			"id": 10,
+			"category": "GitHub Actions",
+			"difficulty": "basic",
+			"question": "What feature can you use to expand the kinds of actions that you can automate in response to common GitHub events?",
+			"options": [
+				{
+					"letter": "A",
+					"text": "GitHub Actions",
+					"is_correct": true
+				},
+				{
+					"letter": "B",
+					"text": "GitHub Advanced Security",
+					"is_correct": false
+				},
+				{
+					"letter": "C",
+					"text": "Dependabot",
+					"is_correct": false
+				},
+				{
+					"letter": "D",
+					"text": "Code scanning",
+					"is_correct": false
+				}
+			],
+			"explanation": "GitHub Actions allows you to automate responses to GitHub events.",
+			"related_topics": ["GitHub Actions", "Automation"]
+		},
+		{
+			"id": 11,
+			"category": "GitHub Actions",
+			"difficulty": "intermediate",
+			"question": "What actions can you take at enterprise level to manage the use of GitHub Actions in your enterprise instance?",
+			"options": [
+				{
+					"letter": "A",
+					"text": "Create workflow templates",
+					"is_correct": false
+				},
+				{
+					"letter": "B",
+					"text": "Configure a GitHub Actions use policy",
+					"is_correct": true
+				},
+				{
+					"letter": "C",
+					"text": "Manually sync public actions in Enterprise Cloud",
+					"is_correct": false
+				},
+				{
+					"letter": "D",
+					"text": "Enable secret scanning",
+					"is_correct": false
+				}
+			],
+			"explanation": "Configuring a use policy is a key action for managing GitHub Actions at the enterprise level.",
+			"related_topics": ["GitHub Actions", "Enterprise Management", "Policy"]
+		},
+		{
+			"id": 12,
+			"category": "GitHub Actions",
+			"difficulty": "intermediate",
+			"question": "What actions can you take to configure self-hosted runners for your enterprise use?",
+			"options": [
+				{
+					"letter": "A",
+					"text": "Create and add custom labels to your runners",
+					"is_correct": true
+				},
+				{
+					"letter": "B",
+					"text": "Add proxy configurations to your runners after they start.",
+					"is_correct": false
+				},
+				{
+					"letter": "C",
+					"text": "Add the IP address or IP address range of your runners at repository level.",
+					"is_correct": false
+				},
+				{
+					"letter": "D",
+					"text": "Configure self-hosted runners to automatically update their operating system.",
+					"is_correct": false
+				}
+			],
+			"explanation": "Adding custom labels helps organize and manage self-hosted runners effectively.",
+			"related_topics": [
+				"Self-hosted Runners",
+				"GitHub Actions",
+				"Runner Configuration"
+			]
+		},
+		{
+			"id": 13,
+			"category": "Security",
+			"difficulty": "basic",
+			"question": "What are encrypted secrets?",
+			"options": [
+				{
+					"letter": "A",
+					"text": "Encrypted secrets are authentication tokens you can generate in your account settings.",
+					"is_correct": false
+				},
+				{
+					"letter": "B",
+					"text": "Encrypted secrets are the equivalent of SSH keys in GitHub.",
+					"is_correct": false
+				},
+				{
+					"letter": "C",
+					"text": "Encrypted secrets are encrypted environment variables you can create to store sensitive information.",
+					"is_correct": true
+				},
+				{
+					"letter": "D",
+					"text": "Encrypted secrets are public keys used to encrypt data in transit.",
+					"is_correct": false
+				}
+			],
+			"explanation": "Encrypted secrets are used to securely store sensitive environment variables.",
+			"related_topics": ["Secrets", "Security", "Environment Variables"]
+		},
+		{
+			"id": 14,
+			"category": "Permissions",
+			"difficulty": "intermediate",
+			"question": "You want to grant a user the permissions required to add and remove organization members to and from a team. Which permission would you need to grant that user?",
+			"options": [
+				{
+					"letter": "A",
+					"text": "The admin permission on a repository",
+					"is_correct": false
+				},
+				{
+					"letter": "B",
+					"text": "The maintain permission on a repository",
+					"is_correct": false
+				},
+				{
+					"letter": "C",
+					"text": "Organization billing manager",
+					"is_correct": false
+				},
+				{
+					"letter": "D",
+					"text": "Team maintainer",
+					"is_correct": true
+				}
+			],
+			"explanation": "Team maintainer permissions allow adding and removing members from a team.",
+			"related_topics": ["Team Management", "Permissions", "Access Control"]
+		},
+		{
+			"id": 15,
+			"category": "Organization",
+			"difficulty": "basic",
+			"question": "What's the purpose of a team?",
+			"options": [
+				{
+					"letter": "A",
+					"text": "A team allows you to manage an organization account.",
+					"is_correct": false
+				},
+				{
+					"letter": "B",
+					"text": "A team allows you to control permission levels for an enterprise.",
+					"is_correct": false
+				},
+				{
+					"letter": "C",
+					"text": "A team allows a single user to sign in using different accounts credentials.",
+					"is_correct": false
+				},
+				{
+					"letter": "D",
+					"text": "A team is intended to reflect a company or group's structure. It's used to provide cascading access permissions and make it easy to notify all team members via mentions.",
+					"is_correct": true
+				}
+			],
+			"explanation": "Teams are used for structuring groups and managing permissions efficiently.",
+			"related_topics": ["Teams", "Organization", "Access Management"]
+		},
+		{
+			"id": 16,
+			"category": "Permissions",
+			"difficulty": "basic",
+			"question": "What's the appropriate repository permission level for contributors who need to actively push changes to your repository?",
+			"options": [
+				{
+					"letter": "A",
+					"text": "admin",
+					"is_correct": false
+				},
+				{
+					"letter": "B",
+					"text": "write",
+					"is_correct": true
+				},
+				{
+					"letter": "C",
+					"text": "triage",
+					"is_correct": false
+				},
+				{
+					"letter": "D",
+					"text": "maintain",
+					"is_correct": false
+				}
+			],
+			"explanation": "Write permissions allow contributors to push changes to the repository.",
+			"related_topics": [
+				"Repository Permissions",
+				"Access Control",
+				"Collaboration"
+			]
+		},
+		{
+			"id": 17,
+			"category": "Organization",
+			"difficulty": "basic",
+			"question": "What's the difference between GitHub organization accounts and GitHub personal/user accounts?",
+			"options": [
+				{
+					"letter": "A",
+					"text": "Organizational accounts are shared accounts, while personal/user accounts are for individuals.",
+					"is_correct": true
+				},
+				{
+					"letter": "B",
+					"text": "You pay more for organization accounts versus personal/user accounts.",
+					"is_correct": false
+				},
+				{
+					"letter": "C",
+					"text": "They're exactly the same.",
+					"is_correct": false
+				},
+				{
+					"letter": "D",
+					"text": "Personal/user accounts have more access than organization accounts.",
+					"is_correct": false
+				}
+			],
+			"explanation": "Organizational accounts enable shared access among multiple users, whereas personal accounts are intended for use by a single individual.",
+			"related_topics": [
+				"Organization Accounts",
+				"Account Types",
+				"Access Management"
+			]
+		},
+		{
+			"id": 18,
+			"category": "Enterprise",
+			"difficulty": "intermediate",
+			"question": "What's the best reason to decide to upgrade to the GitHub Enterprise product?",
+			"options": [
+				{
+					"letter": "A",
+					"text": "Because you want to use GitHub Actions and Codespaces.",
+					"is_correct": false
+				},
+				{
+					"letter": "B",
+					"text": "Because your VP needs to use GitHub Insights.",
+					"is_correct": false
+				},
+				{
+					"letter": "C",
+					"text": "Because you want to centrally manage users and repositories across multiple organizations.",
+					"is_correct": true
+				},
+				{
+					"letter": "D",
+					"text": "Because you want to use the team pull request reviewers feature.",
+					"is_correct": false
+				}
+			],
+			"explanation": "Centralized management is a key feature of GitHub Enterprise.",
+			"related_topics": ["GitHub Enterprise", "Management", "Scalability"]
+		},
+		{
+			"id": 19,
+			"category": "Enterprise",
+			"difficulty": "intermediate",
+			"question": "What is a feature of GitHub Connect?",
+			"options": [
+				{
+					"letter": "A",
+					"text": "Sharing data between GitHub Enterprise Server and GitHub Enterprise Cloud.",
+					"is_correct": true
+				},
+				{
+					"letter": "B",
+					"text": "Allowing you to limit the sharing of your organization's documentation.",
+					"is_correct": false
+				},
+				{
+					"letter": "C",
+					"text": "It has authentication with Security Assertion Markup Language (SAML) single sign-on and access provisioning with SAML or System for Cross-domain Identity Management (SCIM).",
+					"is_correct": false
+				},
+				{
+					"letter": "D",
+					"text": "Allows instant messaging between users",
+					"is_correct": false
+				}
+			],
+			"explanation": "GitHub Connect enables sharing data between GitHub Enterprise Server and GitHub Enterprise Cloud.",
+			"related_topics": [
+				"GitHub Connect",
+				"Enterprise Integration",
+				"Data Sharing"
+			]
+		},
+		{
+			"id": 20,
+			"category": "Monitoring",
+			"difficulty": "basic",
+			"question": "Which two pieces of information are included in your organization's log?",
+			"options": [
+				{
+					"letter": "A",
+					"text": "The user that performed the action and the date and time of the action.",
+					"is_correct": true
+				},
+				{
+					"letter": "B",
+					"text": "The date and time of the action and changes in permissions.",
+					"is_correct": false
+				},
+				{
+					"letter": "C",
+					"text": "Changes in permissions and users being promoted to administrators.",
+					"is_correct": false
+				},
+				{
+					"letter": "D",
+					"text": "Users being promoted to administrators and the user that performed the action.",
+					"is_correct": false
+				}
+			],
+			"explanation": "Logs typically include the user who performed the action and the timestamp.",
+			"related_topics": ["Audit Logs", "Monitoring", "Security"]
+		},
+		{
+			"id": 21,
+			"category": "Documentation",
+			"difficulty": "basic",
+			"question": "What file should you use to create documentation for collaborators that lists supported versions of the project?",
+			"options": [
+				{
+					"letter": "A",
+					"text": "SECURITY.md",
+					"is_correct": true
+				},
+				{
+					"letter": "B",
+					"text": "CONTRIBUTING.md",
+					"is_correct": false
+				},
+				{
+					"letter": "C",
+					"text": "SUPPORT.md",
+					"is_correct": false
+				},
+				{
+					"letter": "D",
+					"text": ".gitignore file",
+					"is_correct": false
+				}
+			],
+			"explanation": "SECURITY.md is used to document security-related information, including supported versions.",
+			"related_topics": ["Security Documentation", "Project Documentation"]
+		},
+		{
+			"id": 22,
+			"category": "Security",
+			"difficulty": "intermediate",
+			"question": "What tool should you use to automate part of your security process?",
+			"options": [
+				{
+					"letter": "A",
+					"text": "Add Dependabot to your code base.",
+					"is_correct": true
+				},
+				{
+					"letter": "B",
+					"text": "Add access restrictions to your enterprise.",
+					"is_correct": false
+				},
+				{
+					"letter": "C",
+					"text": "Create security documentation.",
+					"is_correct": false
+				},
+				{
+					"letter": "D",
+					"text": "Add advisories for your users.",
+					"is_correct": false
+				}
+			],
+			"explanation": "Dependabot automates dependency updates to address security vulnerabilities.",
+			"related_topics": [
+				"Dependabot",
+				"Security Automation",
+				"Vulnerability Management"
+			]
+		},
+		{
+			"id": 23,
+			"category": "Security",
+			"difficulty": "intermediate",
+			"question": "Which two pieces of information should be included in a security advisory?",
+			"options": [
+				{
+					"letter": "A",
+					"text": "Product affected and severity.",
+					"is_correct": true
+				},
+				{
+					"letter": "B",
+					"text": "Severity and exposure list.",
+					"is_correct": false
+				},
+				{
+					"letter": "C",
+					"text": "Administrator name and severity.",
+					"is_correct": false
+				},
+				{
+					"letter": "D",
+					"text": "Exposures list and administrator name.",
+					"is_correct": false
+				}
+			],
+			"explanation": "A security advisory should include the affected product and the severity of the issue.",
+			"related_topics": ["Security Advisory", "Vulnerability Management"]
+		},
+		{
+			"id": 24,
+			"category": "Authentication",
+			"difficulty": "advanced",
+			"question": "As an organization owner, you want to ensure that everyone who is signed in to your corporate network can access the GitHub website without requiring a second sign-in. Which technology would you enable to accomplish this?",
+			"options": [
+				{
+					"letter": "A",
+					"text": "Single sign-on",
+					"is_correct": true
+				},
+				{
+					"letter": "B",
+					"text": "Two-factor authentication",
+					"is_correct": false
+				},
+				{
+					"letter": "C",
+					"text": "Personal Access Tokens",
+					"is_correct": false
+				},
+				{
+					"letter": "D",
+					"text": "SSH keys",
+					"is_correct": false
+				}
+			],
+			"explanation": "Single sign-on allows seamless access for users signed in to the corporate network.",
+			"related_topics": ["Single Sign-On", "SSO", "Authentication"]
+		},
+		{
+			"id": 25,
+			"category": "Authentication",
+			"difficulty": "intermediate",
+			"question": "Where does a user authenticate after enabling SAML Single sign-on?",
+			"options": [
+				{
+					"letter": "A",
+					"text": "With a GitHub login",
+					"is_correct": false
+				},
+				{
+					"letter": "B",
+					"text": "With the organization credentials",
+					"is_correct": false
+				},
+				{
+					"letter": "C",
+					"text": "With the Identity Provider (IdP)",
+					"is_correct": true
+				},
+				{
+					"letter": "D",
+					"text": "With a two-factor authentication login",
+					"is_correct": false
+				}
+			],
+			"explanation": "Users authenticate with the Identity Provider (IdP) after enabling SAML SSO.",
+			"related_topics": ["SAML SSO", "Identity Provider", "Authentication"]
+		},
+		{
+			"id": 26,
+			"category": "Authentication",
+			"difficulty": "intermediate",
+			"question": "What two-factor authentication method supports the secure backup of your authentication codes in the cloud?",
+			"options": [
+				{
+					"letter": "A",
+					"text": "Time-based One-time Password (TOTP)",
+					"is_correct": true
+				},
+				{
+					"letter": "B",
+					"text": "Short Message Service (SMS)",
+					"is_correct": false
+				},
+				{
+					"letter": "C",
+					"text": "Security Key",
+					"is_correct": false
+				},
+				{
+					"letter": "D",
+					"text": "Phone call",
+					"is_correct": false
+				}
+			],
+			"explanation": "TOTP supports secure backup of authentication codes in the cloud.",
+			"related_topics": ["Two-Factor Authentication", "TOTP", "Security"]
+		},
+		{
+			"id": 27,
+			"category": "Authentication",
+			"difficulty": "advanced",
+			"question": "What type of user authentication is used to verify a user identity against a known identity provider?",
+			"options": [
+				{
+					"letter": "A",
+					"text": "Two-factor authentication (2FA)",
+					"is_correct": false
+				},
+				{
+					"letter": "B",
+					"text": "Time-based One-time Password (TOTP)",
+					"is_correct": false
+				},
+				{
+					"letter": "C",
+					"text": "SAML Single Sign-on (SAML SSO)",
+					"is_correct": true
+				},
+				{
+					"letter": "D",
+					"text": "Short Message Service (SMS)",
+					"is_correct": false
+				}
+			],
+			"explanation": "SAML SSO verifies user identity against an identity provider.",
+			"related_topics": ["SAML SSO", "Authentication", "Identity Provider"]
+		},
+		{
+			"id": 28,
+			"category": "Authentication",
+			"difficulty": "advanced",
+			"question": "You're an admin and want to enable team synchronization for your organization. What installation permissions do you need to configure team synchronization for Microsoft Entra ID?",
+			"options": [
+				{
+					"letter": "A",
+					"text": "Provide the tenant URL",
+					"is_correct": false
+				},
+				{
+					"letter": "B",
+					"text": "Read all users' full profiles",
+					"is_correct": true
+				},
+				{
+					"letter": "C",
+					"text": "Generate a valid Single Sign-on for Web Systems (SSWS) token",
+					"is_correct": false
+				},
+				{
+					"letter": "D",
+					"text": "Enable SAML Single Sign-on (SSO)",
+					"is_correct": false
+				}
+			],
+			"explanation": "Reading all users' full profiles is required to configure team synchronization for Microsoft Entra ID.",
+			"related_topics": [
+				"Team Synchronization",
+				"Microsoft Entra ID",
+				"Permissions"
+			]
+		}
+	],
+	"categories": {
+		"API & Packages": {
+			"description": "Questions about GitHub API and Packages",
+			"count": 1
+		},
+		"Authentication": {
+			"description": "User authentication methods and security",
+			"count": 6
+		},
+		"GitHub Packages": {
+			"description": "GitHub Packages features and usage",
+			"count": 1
+		},
+		"Support": {
+			"description": "GitHub support services and priorities",
+			"count": 2
+		},
+		"GitHub Features": {
+			"description": "GitHub platform features",
+			"count": 1
+		},
+		"Collaboration": {
+			"description": "Collaboration and contribution workflows",
+			"count": 1
+		},
+		"Workflow": {
+			"description": "Git and development workflows",
+			"count": 1
+		},
+		"Contribution": {
+			"description": "Contributing to projects",
+			"count": 1
+		},
+		"GitHub Actions": {
+			"description": "GitHub Actions automation",
+			"count": 3
+		},
+		"Security": {
+			"description": "Security features and best practices",
+			"count": 3
+		},
+		"Permissions": {
+			"description": "Access control and permissions",
+			"count": 2
+		},
+		"Organization": {
+			"description": "Organization management",
+			"count": 3
+		},
+		"Enterprise": {
+			"description": "GitHub Enterprise features",
+			"count": 2
+		},
+		"Monitoring": {
+			"description": "Monitoring and audit logs",
+			"count": 1
+		},
+		"Documentation": {
+			"description": "Project documentation",
+			"count": 1
+		}
+	}
+}
