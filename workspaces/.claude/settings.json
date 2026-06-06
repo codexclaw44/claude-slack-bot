@@ -1,3 +1,15 @@
 {
-	"language": "日本語"
+	"extraKnownMarketplaces": {
+		"claude-plugins-official": {
+			"source": {
+				"source": "github",
+				"repo": "anthropics/claude-plugins-official"
+			}
+		}
+	},
+	"enabledPlugins": {
+		"claude-plugins-official@skill-creator": true
+	},
+	"language": "日本語",
+	"enableAllProjectMcpServers": true
 }
